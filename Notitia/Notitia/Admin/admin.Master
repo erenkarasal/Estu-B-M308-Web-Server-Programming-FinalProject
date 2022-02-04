@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Notitia.Admin.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../ckeditor/adapters/jquery.js"></script>
+    <link rel="stylesheet" href="../ckeditor/skins/moono-lisa/editor.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="box">
+            <div class="slider"></div>
+            <div class="main">
+                <div class="mainLeft">
+                    <div class="mainLeftTitle">&nbsp;&nbsp; MENU</div>
+                    <div class="mainLeftContent">
+                        <div style="height: 25px;color:#2a959c;font-weight:bolder;margin-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="Announcements.aspx">Announcements</a></div>
+                        <div style="height: 25px;color:#2a959c;font-weight:bolder;margin-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="Categories.aspx">Categories</a></div>
+                        <div style="height: 25px;color:#2a959c;font-weight:bolder;margin-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="Articles.aspx">Articles</a></div>
+                        <div style="height: 25px;color:#2a959c;font-weight:bolder;margin-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Comments(soon)</a></div>
+                        <div style="height: 25px;color:#2a959c;font-weight:bolder;margin-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Messages(soon)</a></div>
+                    </div>
+                </div>
+                 <div class="mainRight">
+                     <asp:ContentPlaceHolder ID=ContentPlaceHolder1 runat="server"></asp:ContentPlaceHolder>
+                 </div>
+            </div>
+            <div class="footer">Eren Karasal-Süleyman Mansuroğlu - 2021</div>
+        </div>
+    </form>
+</body>
+</html>
